@@ -2,20 +2,14 @@
 
 use timestamp to display time
 
-## Install the Polymer-CLI
 
-First, make sure you have the [Polymer CLI](https://www.npmjs.com/package/polymer-cli) installed. Then run `polymer serve` to serve your element locally.
+`timestamp-time`
+use timestamp to display time
 
-## Viewing Your Element
+usage `<timestamp-time></timestamp-time>`
 
-```
-$ polymer serve
-```
-
-## Running Tests
-
-```
-$ polymer test
-```
-
-Your application is already set up to be tested via [web-component-tester](https://github.com/Polymer/web-component-tester). Run `polymer test` to run your application's test suite locally.
+##Attributes
+| Attribute |Datatype| Description |
+|-----------|--------|-------------|
+| utc | Boolean | `true` if you want to get UTC date/time |
+| type | String | `date` or `time` or empty, if we want Date, Time or Full String|
