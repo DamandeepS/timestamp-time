@@ -32,7 +32,9 @@
         return {
           timestamp: {
             type: Number,
-            value: 'timestamp-time'
+            value: function() {
+              return Date.now();
+            }
           },
           type: {
             type: String,
