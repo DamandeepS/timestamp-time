@@ -52,10 +52,11 @@
       }
 
       _computeReturn(timestamp, type, utc) {
-
         let date = new Date(timestamp),
             locale = "";
-
+        if(!timestamp || typeof timestamp != "number") {
+          date = new Date();
+        }
         console.log(type);
         switch(type) {
           case "date":
