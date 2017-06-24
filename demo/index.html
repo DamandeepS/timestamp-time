@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+
+    <title>timestamp-time demo</title>
+
+    <script src="../../webcomponentsjs/webcomponents-lite.js"></script>
+
+    <link rel="import" href="../../iron-demo-helpers/demo-pages-shared-styles.html">
+    <link rel="import" href="../../iron-demo-helpers/demo-snippet.html">
+    <link rel="import" href="../timestamp-time.html">
+
+    <custom-style>
+      <style is="custom-style" include="demo-pages-shared-styles">
+      </style>
+    </custom-style>
+  </head>
+  <body>
+    <div class="vertical-section-container centered">
+      <h3>Basic timestamp-time demo</h3>
+      <demo-snippet>
+        <template>
+          <timestamp-time timestamp="1498312215357"></timestamp-time>
+        </template>
+      </demo-snippet>
+        <h3>Basic timestamp-time demo (UTC)</h3>
+        <demo-snippet>
+          <template>
+            <timestamp-time utc timestamp="1498312215357"></timestamp-time>
+          </template>
+        </demo-snippet>
+        <h3>Basic timestamp-time date demo</h3>
+        <demo-snippet>
+          <template>
+            <timestamp-time type="date" timestamp="1498312215357"></timestamp-time>
+          </template>
+        </demo-snippet>
+          <h3>Basic timestamp-time date demo (UTC)</h3>
+          <demo-snippet>
+            <template>
+              <timestamp-time utc type="date" timestamp="1498312215357"></timestamp-time>
+            </template>
+          </demo-snippet>
+          <h3>Basic timestamp-time time demo</h3>
+          <demo-snippet>
+            <template>
+              <timestamp-time type="time" timestamp="1498312215357"></timestamp-time>
+            </template>
+          </demo-snippet>
+            <h3>Basic timestamp-time time demo (UTC)</h3>
+            <demo-snippet>
+              <template>
+                <timestamp-time utc type="time" timestamp="1498312215357"></timestamp-time>
+              </template>
+            </demo-snippet>
+    </div>
+  </body>
+</html>
