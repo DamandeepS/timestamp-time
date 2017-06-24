@@ -8,12 +8,20 @@ use timestamp to display date/time
 
 usage `<timestamp-time></timestamp-time>`
 
-<!-- START-HIDDEN-SECTION: Add imports and styling here. -->
-<script src="../webcomponentsjs/webcomponents-lite.js"></script>
-<link rel="import" href="timestamp-time.html">
-<!-- END-HIDDEN-SECTION: Add the visible part of the demo below. -->
+<!---
+```
+<custom-element-demo>
+  <template>
+    <script src="../webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="import" href="timestamp-time.html">
+    <next-code-block></next-code-block>
+  </template>
+</custom-element-demo>
+```
+-->
+```html
 <timestamp-time timestamp="1498312215357"></timestamp-time>
-
+```
 ## Attributes
 
 | Attribute |Datatype| Description |
