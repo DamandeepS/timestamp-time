@@ -20,12 +20,12 @@ usage `<timestamp-time></timestamp-time>`
 ```
 -->
 ```html
-<timestamp-time timestamp="1498312215357"></timestamp-time>
+<timestamp-time utc type="Date" timestamp="1498312215357"></timestamp-time>
 ```
 ## Attributes
 
 | Attribute |Datatype| Description |
 |-----------|--------|-------------|
-| utc _(optional)_ | `Boolean` | `true` if you want to get UTC date/time, else Local date/time |
+| utc _(optional)_ | `Boolean` | shows UTC date/time if  attribute is present |
 | type _(optional)_ | `String` | `date` or `time`, if we want Date or Time, else Full String|
 |timestamp *Required*| `Number`| Timestamp you want to convert, Or else it'll take current time |

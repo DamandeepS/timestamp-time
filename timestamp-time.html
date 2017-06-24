@@ -53,22 +53,22 @@
 
       _computeReturn(timestamp, type, utc) {
         let date = new Date(timestamp),
-            locale = "";
+            locale = "",
+            months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
         if(!timestamp || typeof timestamp != "number") {
           date = new Date();
         }
-        console.log(type);
         switch(type) {
           case "date":
-            var _date = utc? (date.getUTCDate()
-                                  + "/"
-                                  + date.getUTCMonth()
-                                  + "/"
-                                  + date.getUTCFullYear()) : (date.getUTCDate()
-                                  + "/"
-                                  + date.getUTCMonth()
-                                  + "/"
-                                  + date.getUTCFullYear());
+            var _date = utc? (months[date.getUTCMonth()+1]
+                                  + " "
+                                  + date.getUTCDate()
+                                  + ", "
+                                  + date.getUTCFullYear()) : (months[date.getMonth()+1]
+                                  + " "
+                                  + date.getDate()
+                                  + ", "
+                                  + date.getFullYear());
             return _date;
             break;
           case "time":
