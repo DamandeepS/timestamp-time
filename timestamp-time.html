@@ -60,11 +60,11 @@
         }
         switch(type) {
           case "date":
-            var _date = utc? (months[date.getUTCMonth()+1]
+            var _date = utc? (months[date.getUTCMonth()]
                                   + " "
                                   + date.getUTCDate()
                                   + ", "
-                                  + date.getUTCFullYear()) : (months[date.getMonth()+1]
+                                  + date.getUTCFullYear()) : (months[date.getMonth()]
                                   + " "
                                   + date.getDate()
                                   + ", "
