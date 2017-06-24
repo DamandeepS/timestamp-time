@@ -52,13 +52,14 @@
       }
 
       _computeReturn(timestamp, type, utc) {
+        if(!timestamp || typeof timestamp != "number") {
+          return this._computeReturn(Date.now(), type, utc);
+        }
         let date = new Date(timestamp),
             locale = "",
             months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
-        if(!timestamp || typeof timestamp != "number") {
-          date = new Date();
-        }
-        switch(type) {
+
+        switch(type.toLowerCase()) {
           case "date":
             var _date = utc? (months[date.getUTCMonth()]
                                   + " "
