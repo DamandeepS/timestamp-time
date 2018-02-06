@@ -2,6 +2,7 @@
   "name": "timestamp-time",
   "description": "use timestamp to display time",
   "main": "timestamp-time.html",
+  "license": "MIT",
   "dependencies": {
     "polymer": "Polymer/polymer#^2.0.0"
   },
